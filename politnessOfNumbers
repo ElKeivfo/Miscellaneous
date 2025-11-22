@@ -1,0 +1,21 @@
+def number_politness(num):
+  methods = 0
+  starting = 1 
+  start = 1
+  total = 0
+  while starting < num//2:
+    print ("start",start)
+    start = starting
+    while total != num:
+      total += start
+      print(total)
+      start += 1
+    methods += 1
+    #total = 0
+    starting += 1
+    print ("starting",starting)
+
+
+
+num = int(input("Please enter a number: "))
+print(number_politness(num))
