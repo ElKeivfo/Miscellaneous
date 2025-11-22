@@ -1,0 +1,35 @@
+print("Please think of a number between 0 and 100")
+user_num = input("Please enter that number: ")
+
+while not str.isdigit(user_num):
+  user_num = input("Please enter a number between 0 and 100: ")
+
+guess = 50
+temp = str(guess)+"Higher or lower"
+x = input(temp)
+while x !=  "H" and x != "L":
+  x = input("Invalid Input. Higher or Lower? ")
+
+while x!= "H" and x != "L":
+
+  guess_add = guess / 2
+
+  x = input(guess," Higher or Lower? ")
+  while x !=  "H" and x != "L":
+    x = input("Invalid Input. Higher or Lower? ")
+  if x == "H":
+  #range 50 to 100
+    guess += guess_add
+  else:
+    #range 0 to 50
+    guess -= guess_add
+    
+
+
+
+print("You got it! ")
+
+
+
+
+
